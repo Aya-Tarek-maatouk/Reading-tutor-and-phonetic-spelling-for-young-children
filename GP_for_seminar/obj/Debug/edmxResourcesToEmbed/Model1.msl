@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="KidsKingdomModelStoreContainer" CdmEntityContainer="KidsKingdomEntities1">
+    <EntitySetMapping Name="Adminstrators">
+      <EntityTypeMapping TypeName="KidsKingdomModel.Adminstrator">
+        <MappingFragment StoreEntitySet="Adminstrator">
+          <ScalarProperty Name="AdmnID" ColumnName="AdmnID" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Kids">
+      <EntityTypeMapping TypeName="KidsKingdomModel.Kid">
+        <MappingFragment StoreEntitySet="Kid">
+          <ScalarProperty Name="KidID" ColumnName="KidID" />
+          <ScalarProperty Name="FName" ColumnName="FName" />
+          <ScalarProperty Name="LName" ColumnName="LName" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Age" ColumnName="Age" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Kid_Level_lesson">
+      <EntityTypeMapping TypeName="KidsKingdomModel.Kid_Level_lesson">
+        <MappingFragment StoreEntitySet="Kid_Level_lesson">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="KidID" ColumnName="KidID" />
+          <ScalarProperty Name="LessonID" ColumnName="LessonID" />
+          <ScalarProperty Name="ProgressLevel" ColumnName="ProgressLevel" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Kid_level_practice">
+      <EntityTypeMapping TypeName="KidsKingdomModel.Kid_level_practice">
+        <MappingFragment StoreEntitySet="Kid_level_practice">
+          <ScalarProperty Name="UseName" ColumnName="UseName" />
+          <ScalarProperty Name="PracticeName" ColumnName="PracticeName" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="KidID" ColumnName="KidID" />
+          <ScalarProperty Name="practiceID" ColumnName="practiceID" />
+          <ScalarProperty Name="Score" ColumnName="Score" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Lessons">
+      <EntityTypeMapping TypeName="KidsKingdomModel.Lesson">
+        <MappingFragment StoreEntitySet="Lesson">
+          <ScalarProperty Name="LessonID" ColumnName="LessonID" />
+          <ScalarProperty Name="LevelID" ColumnName="LevelID" />
+          <ScalarProperty Name="LessonNumber" ColumnName="LessonNumber" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Lesson_Content">
+      <EntityTypeMapping TypeName="KidsKingdomModel.Lesson_Content">
+        <MappingFragment StoreEntitySet="Lesson_Content">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Image1_C" ColumnName="Image1_C" />
+          <ScalarProperty Name="Image2_S" ColumnName="Image2_S" />
+          <ScalarProperty Name="Image3" ColumnName="Image3" />
+          <ScalarProperty Name="Voice" ColumnName="Voice" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="LessonID" ColumnName="LessonID" />
+          <ScalarProperty Name="video" ColumnName="video" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Levels">
+      <EntityTypeMapping TypeName="KidsKingdomModel.Level">
+        <MappingFragment StoreEntitySet="Level">
+          <ScalarProperty Name="LevelID" ColumnName="LevelID" />
+          <ScalarProperty Name="LevelType" ColumnName="LevelType" />
+          <ScalarProperty Name="LevelNumber" ColumnName="LevelNumber" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Practices">
+      <EntityTypeMapping TypeName="KidsKingdomModel.Practice">
+        <MappingFragment StoreEntitySet="Practice">
+          <ScalarProperty Name="PracticeID" ColumnName="PracticeID" />
+          <ScalarProperty Name="PracticeNumber" ColumnName="PracticeNumber" />
+          <ScalarProperty Name="LevelID" ColumnName="LevelID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Practice_content">
+      <EntityTypeMapping TypeName="KidsKingdomModel.Practice_content">
+        <MappingFragment StoreEntitySet="Practice_content">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Choice1" ColumnName="Choice1" />
+          <ScalarProperty Name="Choice2" ColumnName="Choice2" />
+          <ScalarProperty Name="Choice3" ColumnName="Choice3" />
+          <ScalarProperty Name="Choice4" ColumnName="Choice4" />
+          <ScalarProperty Name="audio" ColumnName="audio" />
+          <ScalarProperty Name="correct" ColumnName="correct" />
+          <ScalarProperty Name="PracticeID" ColumnName="PracticeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="KidsKingdomModel.sysdiagram">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
